@@ -10,8 +10,6 @@ try:
 except:
     pass
 
-if 0 == len(moves):
-    moves = []
 print("Okay, let's start")
 winning_cases = {
     'water': ['snake', 'human', 'tree', 'wolf', 'sponge', 'paper', 'air'],
@@ -95,7 +93,7 @@ def ez_win(x):
         print('Sorry, but the computer chose ' + random.choice(losing_cases[x]))
 
 
-# выписать все луз кейсы и ввести их в словарь. Например лайтинг не выигрывает дерево и прочих. ЗАписать кому проигрывает
+# РАБОТАЕТ ОКЕЙ
 def ez_lose(x):
     global score1
     if len(moves) == 1:
