@@ -4,11 +4,9 @@ ex = False
 name = input('Enter your name: ')
 print('Hello,', name)
 score1 = 0
-# Возможные игровые фигуры
-try:
-    moves = [x for x in input().split(',')]
-except:
-    pass
+# Пустой ввод = камень, ножницы и бумага в игре
+# Ввод из rock, paper даст все 15 игровых фигур
+moves = [x for x in input().split(',')]
 
 print("Okay, let's start")
 winning_cases = {
